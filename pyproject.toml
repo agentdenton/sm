@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sm"]
+
+[project]
+name = "Sm"
+version = "0.0.1"
+
+dependencies = [
+  "click",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.scripts]
+sm = "sm.__main__:main"
